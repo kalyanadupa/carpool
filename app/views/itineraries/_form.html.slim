@@ -1,0 +1,67 @@
+fieldset#single
+  = f.input :leave_date, as: :datetime, default: default_leave_date, start_year: Time.current.year, end_year: 1.year.from_now.year, minute_step: 10, ampm: t('time.ampm'), input_html: { class: 'date-time' }, wrapper: :horizontal_form
+  = f.input :round_trip, as: :boolean, wrapper: :horizontal_boolean
+  = f.input :return_date, as: :datetime, default: default_leave_date, start_year: Time.current.year, end_year: 1.year.from_now.year, minute_step: 10, ampm: t('time.ampm'), input_html: { class: 'date-time' }, disabled: !@itinerary.round_trip, wrapper: :horizontal_form
+  = f.input :fuel_cost, wrapper: :horizontal_form do
+    .input-group.input-group-number
+      = f.text_field :fuel_cost, class: 'form-control'
+      span.input-group-addon= APP_CONFIG.currency
+  .row
+    .col-sm-10.col-sm-offset-2
+      p.help-block#fuel-help data-avg-consumption=current_user.vehicle_avg_consumption
+        span#fuel-help-text
+  = f.input :tolls, wrapper: :horizontal_form do
+    .input-group.input-group-number
+      = f.text_field :tolls, class: 'form-control'
+      span.input-group-addon= APP_CONFIG.currency
+    - if @itinerary.errors.include?(:tolls)
+      span.help-inline
+        = @itinerary.errors.messages[:tolls].join(', ')
+  = f.input :description, as: :text, input_html: { rows: 5 }, hint: t('.description_hint'), wrapper: :horizontal_form
+  .form-group
+    .col-sm-10.col-sm-offset-2
+      - if current_user.female?
+        = f.input :pink, as: :boolean, hint: t('.pink_hint'), wrapper: false
+      = f.input :smoking_allowed, as: :boolean, wrapper: false
+      = f.input :pets_allowed, as: :boolean, wrapper: false
+
+/
+  fieldset#daily.hide.mock
+    .control-group
+      .controls
+        table.table.table-condensed.daily-itinerary-table
+          thead
+            tr
+              th
+              th= t('.day')
+              th= t('.leave_time')
+              th= t('.return_time')
+          tbody
+            - (0..6).each_with_index do |index|
+              tr
+                td
+                  p.text-center
+                    = check_box_tag "day-#{index}"
+                td= label_tag "day-# index ", t('date.day_names')[index]
+                td
+                  = time_select 'one', 'two', { minute_step: 10, default: { hour: 8 }, ampm: t('time.ampm') }, class: 'date-time', disabled: (index > 0)
+                td
+                  = time_select 'one', 'two', { minute_step: 10, default: { hour: 18 }, ampm: t('time.ampm') }, class: 'date-time', disabled: (index > 0)
+          tfoot
+            tr
+              td colspan="2"
+              td colspan="2"
+                = label_tag 'edit-all-times', class: 'checkbox inline' do
+                  = check_box_tag 'edit-all-times', nil, checked: true
+                  = t('.edit_all_times')
+
+/
+  .control-group.hide
+    .controls
+      = label_tag nil, class: 'radio inline' do
+        = f.input, :daily, false, as: :radio, checked: true
+        = t('.single_itinerary')
+      | &nbsp;
+      = label_tag nil, class: 'radio inline mock' do
+        = f.default_tag :radio_button, :daily, true, class: 'inline'
+        = t('.daily_itinerary')

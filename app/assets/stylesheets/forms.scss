@@ -1,0 +1,34 @@
+@import "twbs-variables";
+@import "twbs/bootstrap/mixins";
+
+select.date-time {
+  display: inline-block;
+  width: auto;
+}
+
+input[type=text] {
+  @include text-overflow;
+}
+
+.collapse-link {
+  display: inline-block;
+  margin-bottom: 15px;
+
+  .fa {
+    transition: all .25s ease-in-out;
+  }
+
+  &.collapsed {
+    .fa {
+      transform: rotateZ(-90deg);
+    }
+  }
+}
+
+.input-group-number {
+  max-width: 200px;
+
+  input {
+    text-align: right;
+  }
+}

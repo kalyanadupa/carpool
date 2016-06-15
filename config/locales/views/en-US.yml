@@ -1,0 +1,380 @@
+en-US:
+  lang_native_name: English (US)
+
+  date:
+    formats:
+      full_day: ! '%A %B %e'
+      birthday: ! '%B %-d, %Y'
+      month_year: ! '%B %Y'
+  time:
+    ampm: true
+    formats:
+      time_only: '%I:%M %p'
+  datetime:
+    formats:
+      message: ! '%A %B %e, %I:%M'
+
+  boolean:
+    "true": "Yes"
+    "false": "No"
+
+  helpers:
+    actions: Actions
+    disable_with: Please wait...
+    form:
+      error: Fix the following errors
+    links:
+      new: New
+      back: Back
+      confirm: Are you sure?
+      show: Show
+      edit: Edit
+      destroy: Delete
+      user:
+        ban: Ban
+        unban: Unban
+    titles:
+      new: "New %{model}"
+      edit: "Edit %{model}"
+
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Previous"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"
+
+  templates:
+    itineraries:
+      read_more: Read more
+      show_on_map: Show on map
+      facebook_verified: Verified on Facebook
+
+  meta_title: "Open Source Carpooling Platform: %{appname}"
+  meta_description: "Share your itineraries, save money and earn friends."
+
+  loading: Loading...
+  login: Log in
+  login_with_facebook: Login with Facebook
+  logout: Log Out
+  we_will_never_post: We will never post anything without your explicit consent.
+  why_facebook: "Why Facebook?"
+
+  about: About us
+  how_it_works: How it works
+  policy: Policy
+  terms: Terms
+  demo_terms: Demo Terms
+
+  former_user: A former user
+
+  last_modified: "Last modified: %{date}"
+
+  save: Save
+  close: Close
+
+  delete_account: Delete account
+  demo_mode: This is a demo application
+
+  user_mailer:
+    activation_needed_email:
+      subject: "Welcome to %{website}"
+      welcome: "Welcome to %{website}, %{username}"
+      successfully_signed_up: "You have successfully signed up to %{website},"
+      your_username: "your username is: %{username}."
+      to_login_follow_link: "To login to the site, just follow this link: %{url}"
+      thanks_for_joining: Thanks for joining and have a great day!
+    activation_success_email:
+      subject: Your account is now activated
+      congratulations: "Congratulations, %{username}"
+      successfully_activated: "You have successfully activated your %{website} account,"
+      your_username: "your username is: %{username}."
+      to_login_follow_link: "To login to the site, just follow this link: %{url}"
+      thanks_for_joining: Thanks for joining and have a great day!
+    reset_password_email:
+      subject: Your password reset request
+      hello: "Hello, %{username}"
+      request: "You have requested to reset your password."
+      new_password_follow_link: "To choose a new password, just follow this link: %{url}"
+      have_a_great_day: "Have a great day!"
+
+  recaptcha:
+    errors:
+      incorrect-captcha-sol: Fail
+    enter_words: Enter the words above
+
+  flash:
+    admin:
+      users:
+        success:
+          ban: User successfully banned.
+          unban: User successfully unbanned.
+        error:
+          ban: An error occurred while banning this user.
+          unban: An error occurred while unbanning this user.
+    users:
+      success:
+        update: User successfully updated.
+        destroy: User sucessfully destoryed.
+      error:
+        update: An error occurred while updating this user.
+    feedbacks:
+      success:
+        create: Feedback successfully created.
+        update: Feedback successfully updated.
+        destroy: Feedback successfully destroyed.
+      error:
+        create: An error occurred while creating this feedback.
+        update: An error occurred while updating this feedback.
+        destroy: An error occurred while destroying this feedback.
+    itineraries:
+      success:
+        create: Itinerary successfully created.
+        update: Itinerary successfully updated.
+        destroy: Itinerary successfully destroyed.
+      error:
+        create: An error occurred while creating this itinerary.
+        update: An error occurred while updating this itinerary.
+        destroy: An error occurred while destroying this itinerary.
+        pink: Pink itineraries are visible only to women.
+    sessions:
+      error:
+        create: An error occurred while accessing the application.
+    messages:
+      error:
+        create: An error occurred while creating this message.
+    errors:
+      not_allowed: You don't have permissions to access this page.
+
+  shared:
+    advertising:
+      enterprises: Looking for an Enterprise Carpooling solution?
+      contact_us_html: "Take a look at <strong><a href=\"http://www.companycarpool.com\" target=\"_blank\">Company Carpool</a></strong>"
+    navbar:
+      account_settings: Account Settings
+      admin_users: Manage Users
+      language: Language
+    footer:
+      message: Privacy is not guaranteed at this stage of development
+
+  pages:
+    home:
+      tagline: "Street to share, money to save."
+      os_carpooling_platform: "The Open Source Carpooling Platform"
+      learn_more: "Learn more"
+      what_is_appname: "What is %{appname}?"
+      main_features: "Main Features"
+      share_itinerary_title: Share itineraries
+      share_itinerary_content: "You travel by car daily or occasionally? Share your itinerary and give the chance to other people interested in the same type of path to reach you."
+      make_new_connections_title: Make new friends
+      make_new_connections_content: "The trip will be more fun with friends. We will help you to find traveling companions more compatible with your interests."
+      save_money_title: Save money
+      save_money_content: "Travels are getting more and more expensive? Share costs with your new friends."
+      thats_easy_title: "It's very easy"
+      thats_easy_content: "The simplicity of Google Maps and the wizard process allow anyone to share a path in a few minutes."
+      help_environment_title: "Eco-friendly"
+      help_environment_content: "Less cars, less traffic, less stress and new companions of adventures! Make your travel more enjoyable and help the environment at the same time."
+      open_source_title: "Open Source"
+      open_source_content: "The %{source_code_link} of %{appname} is available to everyone on GitHub, the world's largest open source community."
+      source_code: "source code"
+      signin_terms: "By clicking \"Sign In\", you agree to %{terms_link} of %{appname} and that you have read and understand our %{policy_link}."
+      demo_mode: "This is a demo application. By clicking on \"Sign In\" you agree to our %{demo_terms_link}."
+      join_us_today: "Join us today!"
+    policy:
+      title: Privacy Policy
+    terms:
+      title: Terms of Service
+    demo_terms:
+      title: Terms of Service (Demo)
+
+  admin:
+    users:
+      index:
+        login_as: Login as
+
+  users:
+    banned:
+      title: Suspended account
+      you_were_banned: You were banned!
+      banned_description_html: Contact our staff if you think there was a mistake.
+    calculator:
+      fuel_type: Fuel type
+      fuel_diesel: Diesel
+      fuel_petrol: Petrol
+      fuel_lpg: LPG
+      fuel_methane: Methane
+      fuel_price: Fuel price
+      vehicle_type: Vehicle
+      vehicle_compact: Compact
+      vehicle_standard: Standard
+      vehicle_high_consumption: High consumption
+      per_liter: per liter
+      fuel_cost_estimate: Fuel cost estimate
+    dashboard:
+      title: Dashboard
+      reminder: Reminder
+      new_itinerary: New itinerary
+      search_itineraries: Search itineraries
+      your_itineraries: Your itineraries
+      latest_itineraries: Latest Itineraries
+      by: by
+    itineraries:
+      title: Your itineraries
+    show:
+      member_since: "Member since %{date}"
+      see_all: See All
+      facebook_verified: "A Facebook user is considered verified if he takes any of the following actions: registers for mobile; confirms his account via SMS; enters a valid credit card."
+      basic_info: Basic info
+      friends: "%{count} friends"
+      age: "%{count} years"
+      language: "%{language} language"
+      mutual_friends: Mutual friends
+      likes: Likes
+      and_others:
+        one: and one other
+        other: "and %{count} others"
+    settings:
+      account_settings: Account Settings
+      general_information: General info
+      vehicle_information: Vehicle info
+      user_profile_details: Profile details are updated from Facebook after each login.
+      vehicle_avg_consumption_help: Use a point to separate decimals. This value is used in the fuel cost estimate when creating a new itinerary.
+      vehicle_avg_consumption_note: "Note: Write in this field the %{fuel} value of %{proportional_costs} table"
+      fuel: Fuel
+      proportional_costs: "PROPORTIONAL COSTS %{fuel_currency}/km"
+      km_costs_calculation_link: Calculate the kilometrical cost of your vehicle on the ACI website (Italian)
+      send_email: Send an email when
+      send_email_at_address: "We will send emails at the following address: %{email}"
+      application_settings: Application settings
+
+  itineraries:
+    common:
+      about: "about %{itinerary_link} by %{user_link}"
+      features: Features
+    search:
+      advanced_search: Advanced search
+      the_same: Not specified
+      search: Search
+      verified_users: Verified users
+    index:
+      title: Search itineraries
+    show:
+      contact: "Contact %{user}"
+      send_reference: Send a reference
+      report_itinerary: "Report this itinerary"
+      login_to_contact: "Log in to contact this user"
+    header:
+      app_user: "A user of %{appname}"
+      expenses_to_share: Expenses to share
+      smoking:
+        allowed: Smoking allowed
+        forbidden: Smoking forbidden
+      pets:
+        allowed: Pets allowed
+        forbidden: Pets forbidden
+    edit:
+      title: "Edit itinerary"
+    new:
+      title: New itinerary
+      step_1: Step 1
+      step_2: Step 2
+      step_3: Step 3
+      plan_route: Set up the route
+      insert_itinerary_details: "Insert itinerary details"
+      confirm_and_share: "Confirm and share"
+      next_step: "Next step"
+      previous_step: "Back"
+      missing_publish_actions_permission: "%{appname} doesn't have permissions to publish on your timeline."
+      share_on_timeline_unavailable: "We apologize. %{appname} can't share on Facebook's Timeline right now."
+    route_step:
+      get_route: Get route
+      distance: Distance
+      duration: Duration
+      hint_privacy_title: "A little bit of privacy"
+      hint_privacy_content: "Are you concerned of your privacy? Do not be too specific in setting the path. Select major streets near the point of departure and the point of destination."
+      hint_customize_title: "Customize your itinerary"
+      hint_customize_content: "You use an alternative route because you have to go to your mother-in-law? Drag the path to achieve the desired route."
+      hint_search_before_title: "Search before"
+      hint_search_before_content: "And if your itinerary was already there? %{search_link} among the available itineraries and check if there is one that matches your needs."
+      search_link: "Search"
+    form:
+      description_hint: "Enter a brief description of your itinerary. If there are things that your fellow travelers need to know, add them here (example: \"loud music in the car!\")."
+      single_itinerary: Single Itinerary
+      daily_itinerary: Daily Itinerary
+      day: Day
+      leave_time: Leave time
+      return_time: Return time
+      edit_all_times: Edit all times
+      more_accurate_data: "Need more accurate data for your vehicle?"
+      pink_hint: Pink itineraries can be created only by women and are visible only to women.
+
+  feedbacks:
+    index:
+      hide_fixed: Hide fixed
+      new: New
+      show_fixed: Show fixed
+
+  notifications:
+    index:
+      title: Notifications
+
+  conversations:
+    index:
+      title: Conversations
+    show:
+      title: Conversation
+    new:
+      title: New conversation
+    messages:
+      time_ago: "%{time} ago"
+      seen: "Seen %{date}"
+    form:
+      write_a_message: Write a message...
+      send: Send
+
+  references:
+    common:
+      role: Role
+      driver: Driver
+      passenger: Passenger
+    reference:
+      didnt_write_yet: "%{name} didn't write yet"
+    index:
+      title: References
+    show:
+      title: Reference
+    new:
+      title: New reference
+    snippet:
+      positives:
+        zero: 0 positives
+        one: "%{count} positive"
+        other: "%{count} positives"
+      neutrals:
+        zero: 0 neutrals
+        one: "%{count} neutral"
+        other: "%{count} neutrals"
+      negatives:
+        zero: 0 negatives
+        one: "%{count} negative"
+        other: "%{count} negatives"
+    form:
+      write_a_reference: Write a reference...
+
+  javascript:
+    no_itineraries_found: No itineraries found
+    an_error_occurred: Ops! An error occurred while searching for itineraries.
+    fuel_help_text: "The route is %{km} km long. Considering an average consumption of %{avg_consumption} %{fuel_currency}/km, the estimate cost is %{est}%{currency}."
+    not_found: Route not found
+    zero_results: No results
+    setup_route_first: Setup the route first
+    notifications:
+      conversations:
+        title: Messages
+        see_all: See all
+        no_new: No new messages
+      notifications:
+        title: Notifications
+        see_all: See all
+        no_new: No new messages

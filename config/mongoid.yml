@@ -1,0 +1,27 @@
+development:
+  clients:
+    default:
+      database: icare_development
+      hosts:
+        - localhost:27017
+
+test:
+  clients:
+    default:
+      database: icare_test
+      hosts:
+        - localhost:27017
+
+staging:
+  clients:
+    default:
+      uri: <%= ENV['MONGODB_URI'] %>
+      options:
+       connect_timeout: 15
+
+production:
+  clients:
+    default:
+      uri: <%= ENV['MONGODB_URI'] %>
+      options:
+       connect_timeout: 15

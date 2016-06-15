@@ -1,0 +1,239 @@
+@import "twbs-variables";
+@import "twbs/bootstrap/mixins";
+
+html,
+.homepage {
+  height: 100%;
+}
+
+.homepage {
+  padding: 0;
+
+  .alert {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    min-width: 200px;
+  }
+
+  .btn-toolbar {
+    display: inline-block;
+  }
+}
+
+.homepage .advertising {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.splashscreen {
+  position: relative;
+  display: table;
+  @include size(100%, auto);
+  margin-bottom: 0;
+  background: lighten($brand-primary, 20%) asset-data-url("noise.png");
+  box-shadow: 0 3px 3px fade-out(#000, .75);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    @include square(100%);
+    content: "";
+    background: radial-gradient(fade-out(#000, .95), fade-out(#000, .59), fade-out(#000, .36));
+  }
+}
+
+.splashscreen-container {
+  position: relative;
+  display: table-cell;
+  padding: 15px;
+  @include square(100%);
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 1px fade-out(#000, .1);
+  vertical-align: middle;
+
+  h1,
+  h2,
+  a,
+  small {
+    color: #fff;
+  }
+
+  h1 {
+    margin: 10px 0 $line-height-computed;
+    font-family: "Pacifico";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 34px;
+
+    small {
+      font-size: 30px;
+    }
+  }
+
+  h2 {
+    margin-bottom: $line-height-computed;
+    letter-spacing: 0;
+  }
+
+  .btn-why-facebook {
+    text-decoration: underline;
+  }
+
+  .splashscreen-link {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+
+.btn-learn-more {
+  margin: 0 auto 15px;
+  color: #fff;
+  background-color: fade-out(#000, .85);
+  border: 2px solid fade-out(#fff, .75);
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: fade-out(#000, .65);
+    border-color: fade-out(#fff, .6);
+  }
+
+  .fa {
+    position: relative;
+    margin-left: 5px;
+    transform: translate3d(0, 1px, 0);
+    animation: pulse-down 5s ease-in infinite;
+  }
+}
+
+.btn-why-facebook {
+  font-size: $font-size-small;
+}
+
+.featurettes {
+  margin-bottom: $line-height-computed;
+}
+
+.featurette {
+  padding: 20px 0;
+
+  &:nth-child(even) {
+    background-color: $flat-ui-clouds;
+  }
+
+  h3 {
+    margin-top: 10px;
+  }
+
+  .container {
+    max-width: $container-md;
+  }
+
+  .fa {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    font-size: 4em;
+    color: $brand-primary;
+  }
+}
+
+.learn-more-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @include center-block;
+  width: 100%;
+}
+
+.signin-terms {
+  margin-top: $line-height-computed;
+}
+
+@media (min-width: $screen-sm-min) {
+  .homepage .advertising {
+    position: absolute;
+  }
+
+  .btn-fb {
+    @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+  }
+
+  .btn-why-facebook {
+    font-size: $font-size-base;
+  }
+
+  .splashscreen {
+    height: 100%;
+    min-height: 375px;
+  }
+
+  .splashscreen-container {
+    padding-bottom: 62px;
+
+    h1 {
+      font-size: 70px;
+      line-height: 44px;
+    }
+
+    h2 {
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    .btn-toolbar {
+      position: relative;
+    }
+
+    .btn-why-facebook {
+      position: absolute;
+      top: 5px;
+      font-size: $font-size-base;
+    }
+  }
+
+  .featurette {
+    padding: 60px 0;
+
+    h3 {
+      font-size: $font-size-h1;
+    }
+
+    p {
+      font-size: 21px;
+      font-weight: 300;
+    }
+
+    .fa {
+      margin-right: 60px;
+      font-size: 10em;
+    }
+
+    &:nth-child(even) {
+      .fa {
+        float: right;
+        margin-right: 0;
+        margin-left: 60px;
+      }
+    }
+  }
+}
+
+
+@keyframes pulse-down {
+  80% { transform: translate3d(0, 1px, 0); }
+  85% { transform: translate3d(0, 5px, 0); }
+  90% { transform: translate3d(0, 1px, 0); }
+  95% { transform: translate3d(0, 5px, 0); }
+  100% { transform: translate3d(0, 1px, 0); }
+}

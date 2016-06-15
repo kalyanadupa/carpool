@@ -1,0 +1,44 @@
+@import "twbs-variables";
+@import "twbs/bootstrap/mixins";
+
+footer {
+  padding: $line-height-computed 0;
+  margin-top: $line-height-computed;
+  font-size: $font-size-base + 1;
+  color: $gray;
+  background-color: transparent !important;
+  border-top: 1px solid $hr-border;
+
+  a,
+  a:hover,
+  a:focus {
+    color: $gray;
+  }
+}
+
+.list-footer {
+  margin-bottom: 0;
+
+  li {
+    display: block;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.diowa-footer {
+      display: block;
+      margin-bottom: 10px;
+      clear: both;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .list-footer > li,
+  .list-footer > li.diowa-footer {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}

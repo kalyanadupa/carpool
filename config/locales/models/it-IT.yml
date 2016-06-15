@@ -1,0 +1,109 @@
+it-IT:
+  mongoid:
+    models:
+      user:
+        one: Utente
+        other: Utenti
+      reference:
+        one: Referenza
+        other: Referenze
+      itinerary:
+        one: Itinerario
+        other: Itinerari
+      feedback:
+        one: Feedback
+        other: Feedback
+      notification:
+        one: Notifica
+        other: Notifiche
+      conversation:
+        one: Conversazione
+        other: Conversazioni
+      message:
+        one: Messaggio
+        other: Messaggi
+    attributes:
+      conversation:
+        messages: Messaggi
+      user:
+        email: E-mail
+        name: Nome
+        facebook_verified: Verificato su Facebook
+        about: Su di te
+        gender: Sesso
+        age: Età
+        locale: Localizzazione
+        gender_male: Uomo
+        gender_female: Donna
+        birthday: Data di nascita
+        education: Istruzione
+        work: Lavoro
+        time_zone: Fuso orario
+        vehicle_avg_consumption: Costo carburante
+        send_email_messages: Si riceve un messaggio
+        send_email_references: Si riceve una referenza
+      feedback:
+        type: Tipo
+        status: Stato
+        message: Messaggio
+        updated_at: Ultima modifica
+        url: Indirizzo
+      itinerary:
+        start_address: Partenza
+        end_address: Arrivo
+        avoid_highways: Evita autostrade
+        avoid_tolls: Evita strade a pedaggio
+        start_location: Punto di partenza
+        end_location: Punto di arrivo
+        title: Titolo
+        description: Descrizione
+        share_on_facebook_timeline: Condividi su Facebook
+        smoking_allowed: Si fuma a bordo
+        pets_allowed: Animali a bordo
+        fuel_cost: Costo carburante
+        tolls: Pedaggi
+        pink: Itinerario rosa
+        round_trip: Andata e ritorno
+        leave_date: Data partenza
+        return_date: Data ritorno
+        driver_gender: Sesso del guidatore
+        daily: Giornaliero
+      reference:
+        body: Messaggio
+        rating: Valutazione
+        rating_negative: Negativa
+        rating_neutral: Neutrale
+        rating_positive: Positiva
+      message:
+        body: Messaggio
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              invalid: non è una e-mail valida
+        itinerary:
+          attributes:
+            route:
+              out_of_boundaries: non è incluso nell'area geografica autorizzata.
+            pink:
+              driver_must_be_female: solo le donne possono creare itinerari rosa
+        conversation:
+          attributes:
+            user_ids:
+              already_exists: hai già una conversazione su questo itinerario
+        reference:
+          attributes:
+            user:
+              yourself: non puoi lasciare una referenza a te stesso
+            referencing_user_id:
+              already_present: hai già lasciato una referenza per questo utente
+
+  activemodel:
+    attributes:
+    errors:
+      models:
+        login:
+          attributes:
+            email:
+              invalid: non è una e-mail valida

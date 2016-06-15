@@ -1,0 +1,109 @@
+en-US:
+  mongoid:
+    models:
+      user:
+        one: User
+        other: Users
+      reference:
+        one: Reference
+        other: References
+      itinerary:
+        one: Itinerary
+        other: Itineraries
+      feedback:
+        one: Feedback
+        other: Feedbacks
+      notification:
+        one: Notification
+        other: Notifications
+      conversation:
+        one: Conversation
+        other: Conversations
+      message:
+        one: Message
+        other: Messages
+    attributes:
+      conversation:
+        messages: Messages
+      user:
+        email: Email
+        name: Name
+        facebook_verified: Verified on Facebook
+        about: About
+        gender: Gender
+        age: Age
+        locale: Localization
+        gender_male: Male
+        gender_female: Female
+        birthday: Birthday
+        education: Education
+        work: Work
+        time_zone: Time zone
+        vehicle_avg_consumption: Fuel cost
+        send_email_messages: You receive a message
+        send_email_references: You receive a reference
+      feedback:
+        type: Type
+        status: Status
+        message: Message
+        updated_at: Last modified
+        url: URL
+      itinerary:
+        start_address: Start address
+        end_address: End address
+        avoid_highways: Avoid highways
+        avoid_tolls: Avoid tolls
+        start_location: Start location
+        end_location: End location
+        title: Title
+        description: Description
+        share_on_facebook_timeline: Share on Facebook
+        smoking_allowed: Smoking allowed
+        pets_allowed: Pets allowed
+        fuel_cost: Fuel cost
+        tolls: Tolls
+        pink: Pink Itinerary
+        round_trip: Round trip
+        leave_date: Leave date
+        return_date: Return date
+        driver_gender: Driver's gender
+        daily: Daily
+      reference:
+        body: Message
+        rating: Rating
+        rating_negative: Negative
+        rating_neutral: Neutral
+        rating_positive: Positive
+      message:
+        body: Message
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              invalid: is not a valid email
+        itinerary:
+          attributes:
+            route:
+              out_of_boundaries: is not included within the authorized geographic area.
+            pink:
+              driver_must_be_female: only women can create pink itineraries
+        conversation:
+          attributes:
+            user_ids:
+              already_exists: you already have a conversation about this itinerary
+        reference:
+          attributes:
+            user:
+              yourself: you cannot leave a reference for yourself
+            referencing_user_id:
+              already_present: you already left a reference for this user
+
+  activemodel:
+    attributes:
+    errors:
+      models:
+        login:
+          attributes:
+            email:
+              invalid: is not a valid email
