@@ -165,8 +165,8 @@ en-US:
       learn_more: "Learn more"
       what_is_appname: "What is %{appname}?"
       main_features: "Main Features"
-      share_itinerary_title: Share itineraries
-      share_itinerary_content: "You travel by car daily or occasionally? Share your itinerary and give the chance to other people interested in the same type of path to reach you."
+      share_itinerary_title: Share itiner
+      share_itinerary_content: "You travel tinerary and give the chance to other people interested in the same type of path to reach you."
       make_new_connections_title: Make new friends
       make_new_connections_content: "The trip will be more fun with friends. We will help you to find traveling companions more compatible with your interests."
       save_money_title: Save money
@@ -179,8 +179,8 @@ en-US:
       open_source_content: "The %{source_code_link} of %{appname} is available to everyone on GitHub, the world's largest open source community."
       source_code: "source code"
       signin_terms: "By clicking \"Sign In\", you agree to %{terms_link} of %{appname} and that you have read and understand our %{policy_link}."
-      demo_mode: "This is a demo application. By clicking on \"Sign In\" you agree to our %{demo_terms_link}."
-      join_us_today: "Join us today!"
+      demo_mode: "This is my application. By clicking on \"Sign In\" you agree to our %{demo_terms_link}."
+      join_us_today: "Welocme here"
     policy:
       title: Privacy Policy
     terms:
