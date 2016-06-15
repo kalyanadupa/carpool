@@ -148,6 +148,8 @@ en-US:
       not_allowed: You don't have permissions to access this page.
 
   shared:
+    advertising:
+      enterprises: Please login to use
     navbar:
       account_settings: Account Settings
       admin_users: Manage Users
