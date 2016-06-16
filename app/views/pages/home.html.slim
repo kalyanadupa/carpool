@@ -6,11 +6,7 @@
 == render 'shared/flash_messages'
 .splashscreen
   .splashscreen-container
-    h1
-      = APP_CONFIG.app_name
-      - if APP_CONFIG.demo_mode
-        '
-        small demo
+    h1= t('.app_nm')
     h2= t('.os_carpooling_platform')
     == render 'facebook_login'
     .learn-more-container.hidden-xs
