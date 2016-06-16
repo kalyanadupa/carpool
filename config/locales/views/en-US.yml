@@ -299,7 +299,7 @@ en-US:
       hint_search_before_content: "Check if your iternary is already there? %{search_link} among the available itineraries and check if there is one that matches your needs."
       search_link: "Search"
     form:
-      description_hint: "Enter a brief description of your itinerary. If there are things that your fellow travelers need to know, add them here (example: \"loud music in the car!\")."
+      description_hint: "Enter a brief description of your itinerary.  (like: \"number of seats available!\")."
       single_itinerary: Single Itinerary
       daily_itinerary: Daily Itinerary
       day: Day
@@ -365,7 +365,7 @@ en-US:
   javascript:
     no_itineraries_found: No itineraries found
     an_error_occurred: Ops! An error occurred while searching for itineraries.
-    fuel_help_text: "The route is %{km} km long. Considering an average consumption of %{avg_consumption} ₹/km, the estimate cost is %{est}%{currency}."
+    fuel_help_text: "The route is %{km} km long. Considering an average consumption of %{avg_consumption} ₹/km, the estimate cost is %{est} ₹."
     not_found: Route not found
     zero_results: No results
     setup_route_first: Setup the route first
