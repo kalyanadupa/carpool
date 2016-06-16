@@ -161,7 +161,7 @@ en-US:
     home:
       tagline: "Street to share, money to save."
       app_nm: "Sindhu Carpool"
-      os_carpooling_platform: "The Open Source Carpooling Platform"
+      os_carpooling_platform: "IIT Hyderabad's car pooling application"
       learn_more: "Learn more"
       what_is_appname: "What is %{appname}?"
       main_features: "Main Features"
@@ -271,8 +271,8 @@ en-US:
         allowed: Smoking allowed
         forbidden: Smoking forbidden
       pets:
-        allowed: Pets allowed
-        forbidden: Pets forbidden
+        allowed: Luggage allowed
+        forbidden: Luggage not allowed
     edit:
       title: "Edit itinerary"
     new:
@@ -365,7 +365,7 @@ en-US:
   javascript:
     no_itineraries_found: No itineraries found
     an_error_occurred: Ops! An error occurred while searching for itineraries.
-    fuel_help_text: "The route is %{km} km long. Considering an average consumption of %{avg_consumption} ₹/km, the estimate cost is %{est} ₹."
+    fuel_help_text: "The route is %{km} km long. Considering an average consumption of %{avg_consumption} , the estimate cost is %{est} ."
     not_found: Route not found
     zero_results: No results
     setup_route_first: Setup the route first
