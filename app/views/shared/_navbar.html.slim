@@ -7,7 +7,7 @@ nav.navbar.navbar-fixed-top.navbar-internal.navbar-default role='navigation'
         span.icon-bar
       = link_to user_signed_in? ? :dashboard : root_path, class: 'navbar-brand' do
         = image_tag 'turtle_dark.svg', class: 'navbar-brand-logo'
-        span.hidden-xs<= APP_CONFIG.app_name
+        span.hidden-xs<= t('.app_nm')
     - if user_signed_in?
       == render 'shared/notifications'
       .navbar-collapse.collapse.navbar-responsive-collapse role="navigation"
