@@ -14,9 +14,9 @@ SimpleConfig.for :application do
   set :base_url, 'localhost:3000'
   set :single_process_mode, true
 
-  set :currency, '.00 €'
+  set :currency, '.00 ₹'
   set :fuel_consumption, 0.12
-  set :fuel_currency, '€'
+  set :fuel_currency, '₹'
 
   set :costs_calculation_service_link, 'http://servizi.aci.it/CKInternet/'
 
