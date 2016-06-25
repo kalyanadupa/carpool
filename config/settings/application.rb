@@ -15,7 +15,7 @@ SimpleConfig.for :application do
   set :single_process_mode, true
 
   set :currency, '.00 ₹'
-  set :fuel_consumption, 0.12
+  set :fuel_consumption, 11.00
   set :fuel_currency, '₹'
 
   set :costs_calculation_service_link, 'http://servizi.aci.it/CKInternet/'
@@ -41,7 +41,7 @@ SimpleConfig.for :application do
 
   group :map do
     # defaults to Italy
-    set :center, '41.87194, 12.567379999999957'
+    set :center, '17.412184, 78.469512'
     set :zoom, 8
     group :bounds do
       set :sw, '35.49292010, 6.62672010'
