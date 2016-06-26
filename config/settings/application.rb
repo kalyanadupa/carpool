@@ -6,7 +6,7 @@
 # SET SENSITIVE DATA ONLY IN 'local.rb'
 
 SimpleConfig.for :application do
-  set :app_name, 'Caropool'
+  set :app_name, 'Sindhu Caropool'
   set :repository_url, 'http://github.com/diowa/icare'
 
   set :advertising, true
