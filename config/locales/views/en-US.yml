@@ -179,7 +179,7 @@ en-US:
       open_source_content: "The %{source_code_link} of %{appname} is available to everyone on GitHub, the world's largest open source community."
       source_code: "source code"
       signin_terms: "By clicking \"Sign In\", you agree to %{terms_link} of %{appname} and that you have read and understand our %{policy_link}."
-      demo_mode: "This is my application. By clicking on \"Sign In\" you agree to our %{demo_terms_link}."
+      demo_mode: "This is my application is for carpooling in IIT H. Please click \"Sign In\" to start using the app."
       join_us_today: "Welocme here"
     policy:
       title: Privacy Policy
