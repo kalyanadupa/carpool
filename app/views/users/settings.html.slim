@@ -15,7 +15,7 @@
         .input-group.input-group-number
           = f.text_field :vehicle_avg_consumption, class: 'form-control input-number-sm'
           span.input-group-addon
-            | #₹/km
+            | #{APP_CONFIG.fuel_currency}/km
       .row
         .col-sm-10.col-sm-offset-2
           p.help-block
