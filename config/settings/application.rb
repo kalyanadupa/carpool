@@ -6,17 +6,17 @@
 # SET SENSITIVE DATA ONLY IN 'local.rb'
 
 SimpleConfig.for :application do
-  set :app_name, 'Carpool'
-  set :repository_url, 'https://github.com/kalyanadupa/carpool'
+  set :app_name, 'icare'
+  set :repository_url, 'http://github.com/diowa/icare'
 
   set :advertising, true
   set :demo_mode, true
   set :base_url, 'localhost:3000'
   set :single_process_mode, true
 
-  set :currency, '.00 ₹'
-  set :fuel_consumption, 10.00
-  set :fuel_currency, '₹'
+  set :currency, '.00 €'
+  set :fuel_consumption, 0.12
+  set :fuel_currency, '€'
 
   set :costs_calculation_service_link, 'http://servizi.aci.it/CKInternet/'
 
