@@ -149,8 +149,7 @@ en-US:
 
   shared:
     advertising:
-      enterprises: Looking for an Enterprise Carpooling solution?
-      contact_us_html: "Take a look at <strong><a href=\"http://www.companycarpool.com\" target=\"_blank\">Company Carpool</a></strong>"
+      enterprises: Please login to use
     navbar:
       account_settings: Account Settings
       admin_users: Manage Users
@@ -161,12 +160,13 @@ en-US:
   pages:
     home:
       tagline: "Street to share, money to save."
-      os_carpooling_platform: "The Open Source Carpooling Platform"
+      app_nm: "Sindhu Carpool"
+      os_carpooling_platform: "IIT Hyderabad's car pooling application"
       learn_more: "Learn more"
       what_is_appname: "What is %{appname}?"
       main_features: "Main Features"
-      share_itinerary_title: Share itineraries
-      share_itinerary_content: "You travel by car daily or occasionally? Share your itinerary and give the chance to other people interested in the same type of path to reach you."
+      share_itinerary_title: Share itiner
+      share_itinerary_content: "You travel tinerary and give the chance to other people interested in the same type of path to reach you."
       make_new_connections_title: Make new friends
       make_new_connections_content: "The trip will be more fun with friends. We will help you to find traveling companions more compatible with your interests."
       save_money_title: Save money
@@ -179,8 +179,8 @@ en-US:
       open_source_content: "The %{source_code_link} of %{appname} is available to everyone on GitHub, the world's largest open source community."
       source_code: "source code"
       signin_terms: "By clicking \"Sign In\", you agree to %{terms_link} of %{appname} and that you have read and understand our %{policy_link}."
-      demo_mode: "This is a demo application. By clicking on \"Sign In\" you agree to our %{demo_terms_link}."
-      join_us_today: "Join us today!"
+      demo_mode: "This is my application. By clicking on \"Sign In\" you agree to our %{demo_terms_link}."
+      join_us_today: "Welocme here"
     policy:
       title: Privacy Policy
     terms:
@@ -242,7 +242,7 @@ en-US:
       vehicle_avg_consumption_help: Use a point to separate decimals. This value is used in the fuel cost estimate when creating a new itinerary.
       vehicle_avg_consumption_note: "Note: Write in this field the %{fuel} value of %{proportional_costs} table"
       fuel: Fuel
-      proportional_costs: "PROPORTIONAL COSTS %{fuel_currency}/km"
+      proportional_costs: "PROPORTIONAL COSTS ₹/km"
       km_costs_calculation_link: Calculate the kilometrical cost of your vehicle on the ACI website (Italian)
       send_email: Send an email when
       send_email_at_address: "We will send emails at the following address: %{email}"
@@ -271,8 +271,8 @@ en-US:
         allowed: Smoking allowed
         forbidden: Smoking forbidden
       pets:
-        allowed: Pets allowed
-        forbidden: Pets forbidden
+        allowed: Luggage allowed
+        forbidden: Luggage not allowed
     edit:
       title: "Edit itinerary"
     new:
@@ -291,15 +291,15 @@ en-US:
       get_route: Get route
       distance: Distance
       duration: Duration
-      hint_privacy_title: "A little bit of privacy"
-      hint_privacy_content: "Are you concerned of your privacy? Do not be too specific in setting the path. Select major streets near the point of departure and the point of destination."
+      hint_privacy_title: "Enter Address"
+      hint_privacy_content: "Just enter the approximate start address and end address, and select get route to Customize "
       hint_customize_title: "Customize your itinerary"
-      hint_customize_content: "You use an alternative route because you have to go to your mother-in-law? Drag the path to achieve the desired route."
+      hint_customize_content: "You can use an alternative route. Drag the path to achieve the desired route."
       hint_search_before_title: "Search before"
-      hint_search_before_content: "And if your itinerary was already there? %{search_link} among the available itineraries and check if there is one that matches your needs."
+      hint_search_before_content: "Check if your iternary is already there? %{search_link} among the available itineraries and check if there is one that matches your needs."
       search_link: "Search"
     form:
-      description_hint: "Enter a brief description of your itinerary. If there are things that your fellow travelers need to know, add them here (example: \"loud music in the car!\")."
+      description_hint: "Enter a brief description of your itinerary.  (like: \"number of seats available!\")."
       single_itinerary: Single Itinerary
       daily_itinerary: Daily Itinerary
       day: Day
@@ -365,7 +365,7 @@ en-US:
   javascript:
     no_itineraries_found: No itineraries found
     an_error_occurred: Ops! An error occurred while searching for itineraries.
-    fuel_help_text: "The route is %{km} km long. Considering an average consumption of %{avg_consumption} %{fuel_currency}/km, the estimate cost is %{est}%{currency}."
+    fuel_help_text: "The route is %{km} km long. Considering an average consumption of %{avg_consumption} , the estimate cost is %{est} ."
     not_found: Route not found
     zero_results: No results
     setup_route_first: Setup the route first
