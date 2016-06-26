@@ -19,9 +19,6 @@
       .row
         .col-sm-10.col-sm-offset-2
           p.help-block
-            = t('.vehicle_avg_consumption_help')
-            '
-            = link_to t('.km_costs_calculation_link'), APP_CONFIG.costs_calculation_service_link, target: '_blank'
             br
             small
               = t('.vehicle_avg_consumption_note', fuel: content_tag(:u, t('.fuel')), proportional_costs: content_tag(:u, t('.proportional_costs', fuel_currency: APP_CONFIG.fuel_currency))).html_safe
